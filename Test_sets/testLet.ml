@@ -1,7 +1,9 @@
 
-run (Let("g", EInt(8), Op("+", Ide("g"), EInt(2)))) ;; (* esempio corretto *)
+(* Correct example *)
+run (Let("g", EInt(8), Op("+", Ide("g"), EInt(2)))) ;;
 
 flush stdout ;;
 
-run (Let(Ide("g"), EInt(8), Op("+", Ide("g"), EInt(2)))) ;; (* esempio sbagliato *)
+(* Wrong example *)
+run (Let(Ide("g"), EInt(8), Op("+", Ide("g"), EInt(2)))) ;;
 
