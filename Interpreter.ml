@@ -44,7 +44,7 @@ let rec applyEnv ((env: expressibleValue environment), (idtf: ide)) = match env 
 	| (id, vl)::rest -> if id = idtf then vl
 						else applyEnv(rest, idtf) ;;
 
-(* Gets the type associated with the specified identifier from the environment *)				
+(* Gets the type associated with the specified identifier from the environment *)
 let rec applyTenv ((tenv: valueType environment), (idtf: ide)) = match tenv with
 	  [] -> Unknown
 	| (id, tp)::rest -> if id = idtf then tp
