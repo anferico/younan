@@ -1,7 +1,9 @@
 
-run (EInt(47)) ;; (* esempio corretto *)
+(* Correct example *)
+run (EInt(47)) ;;
 
 flush stdout ;;
 
-run (EInt("somestring")) ;; (* esempio sbagliato *)
+(* Wrong example *)
+run (EInt("somestring")) ;;
 
