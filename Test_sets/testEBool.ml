@@ -1,7 +1,9 @@
 
-run (EBool(false)) ;; (* esempio corretto *)
+(* Correct example *)
+run (EBool(false)) ;; 
 
 flush stdout ;;
 
-run (EBool(4)) ;; (* esempio sbagliato *)
+(* Wrong example *)
+run (EBool(4)) ;;
 
