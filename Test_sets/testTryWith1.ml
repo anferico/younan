@@ -1,6 +1,6 @@
 
-(* esempio corretto *)
-(* Ipotetica sintassi concreta
+(* Correct example *)
+(* Corresponding concrete syntax:
 	try x with 50 in
 		| x <= 0 --> x + 1
 		| not(x <= 10) --> x - 1
@@ -14,8 +14,8 @@ let patterns1 =
 
 flush stdout ;;
 
-(* esempio sbagliato *)
-(* Ipotetica sintassi concreta
+(* Wrong example *)
+(* Corresponding concrete syntax:
 	try x with 50 in
 		| x <= 0 --> x + 1
 		| not(x <= 10) --> x = 15
