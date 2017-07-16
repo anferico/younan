@@ -1,14 +1,14 @@
 
-(* esempio corretto *)
-(* Ipotetica sintassi concreta
+(* Correct example *)
+(* Corresponding concrete syntax:
 	not(false)
 *)
 run (Not(EBool(false))) ;; 
 
 flush stdout ;;
 
-(* esempio sbagliato *)
-(* Ipotetica sintassi concreta
+(* Wrong example *)
+(* Corresponding concrete syntax:
 	not(0)
 *)
 run (Not(EInt(0))) ;; 
