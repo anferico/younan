@@ -1,7 +1,9 @@
 
-run (Fun("t", TypeOfInt, Op("*", EInt(2), Ide("t")))) ;; (* esempio corretto *)
+(* Correct example *)
+run (Fun("t", TypeOfInt, Op("*", EInt(2), Ide("t")))) ;;
 
 flush stdout ;;
 
-run (Fun(Ide("t"), TypeOfInt, Op("*", EInt(2), Ide("t")))) ;; (* esempio sbagliato *)
+(* Wrong example *)
+run (Fun(Ide("t"), TypeOfInt, Op("*", EInt(2), Ide("t")))) ;;
 
