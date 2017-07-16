@@ -1,4 +1,4 @@
-# younan
+# Younan
 A simple interpreter for an even simpler functional language (Younan). The interpreter assumes static (lexical) scoping and performs dynamic type checking.
 
 Younan's grammar:
