@@ -1,6 +1,6 @@
 
-(* esempio corretto *)
-(* Ipotetica sintassi concreta
+(* Correct example *)
+(* Corresponding concrete syntax:
 
 	let x = 17 in
 		let h = fun (p:int) -> 5+p in
@@ -10,8 +10,8 @@ run (Let("x", EInt(17), Let("h", Fun("p", TypeOfInt, Op("+", EInt(5), Ide("p")))
 
 flush stdout ;;
 
-(* esempio sbagliato *)
-(* Ipotetica sintassi concreta
+(* Wrong example *)
+(* Corresponding concrete syntax:
 
 	let x = 17 in
 		let h = fun (p:int) -> 5+p in
