@@ -1,7 +1,7 @@
 # Younan
 A simple interpreter for an even simpler functional language (Younan). The interpreter assumes static (lexical) scoping and performs dynamic type checking.
 
-Younan's abstract syntax grammar: (check Interpreter.ml for the concrete syntax)
+The interpreter assumes that the program has already gone through a compilation phase. Each example provided in the Test_sets directory is indeed written using an intermediate language. The concrete syntax of the language is defined by the following grammar:
 
 ```
 Ide ::= <standard definition>        (Identifiers)
