@@ -50,7 +50,7 @@ let rec applyTenv ((tenv: valueType environment), (idtf: ide)) = match tenv with
 	| (id, tp)::rest -> if id = idtf then tp
 						else applyTenv(rest, idtf) ;;
 
-(* Gets the type of the specified exression *)
+(* Gets the type of the specified expression *)
 let rec typeof ((tenv: valueType environment), (exp: typedExpression)) = match exp with
 	  EInt(n) -> TypeOfInt
 	| EBool(bl) -> TypeOfBool
@@ -210,6 +210,6 @@ let rec semantics ((exp: typedExpression), (env: expressibleValue environment), 
 							  			      	 semantics(TryWith(id, exp1, remn), env, tenv)
 						  | _ -> failwith("Non-boolean pattern guard."))) ;;
 
-(* Evaluate the specified expression *)
+(* Evaluate the specified expression! *)
 let run (exp: typedExpression) = semantics(exp, [], []) ;;
 
