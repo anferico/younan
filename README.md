@@ -1,7 +1,7 @@
 # Younan
 A simple interpreter for an even simpler functional language (Younan). The interpreter assumes static (lexical) scoping and performs dynamic type checking.
 
-The interpreter assumes that the program has already gone through a compilation phase (Younan -> OCaml). Each example provided in the Test_sets directory shows indeed an OCaml representation of the original program. The concrete syntax of the language is defined by the following grammar:
+The interpreter assumes that the program has already gone through a compilation phase (Younan -> OCaml). Each example provided in the `Test_sets` directory shows indeed an OCaml representation of the original program. The concrete syntax of the language is defined by the following grammar:
 
 ```
 Ide ::= <standard definition>        (Identifiers)
